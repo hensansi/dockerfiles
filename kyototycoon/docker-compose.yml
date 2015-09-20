@@ -1,4 +1,4 @@
-frontend:
+database:
   build: .
   ports:
-   - 9000:1978
+   - 1978:1978
