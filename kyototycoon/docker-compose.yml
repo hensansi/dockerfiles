@@ -1,0 +1,4 @@
+frontend:
+  build: .
+  ports:
+   - 9000:1978

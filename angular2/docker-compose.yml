@@ -1,0 +1,7 @@
+frontend:
+  build: .
+  ports:
+   - 8080:80
+  volumes:
+   - ./angular:/var/www/angular
+   - ./nginx:/etc/nginx
