@@ -1,8 +1,14 @@
-FROM debian:stable
+FROM debian:testing
 MAINTAINER Henrique Silva
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    wget ca-certificates unzip make openssl build-essential zlib1g-dev libssl-dev
+    wget ca-certificates unzip make openssl build-essential libssl-dev
+
+WORKDIR /tmp
+RUN wget https://github.com/jtkukunas/zlib/archive/master.zip -O zlib.zip &&\
+    unzip /tmp/zlib.zip &&\
+    cd zlib* &&\
+    ./configure && make && make install
 
 WORKDIR /tmp
 RUN wget https://github.com/cloudflare/kyotocabinet/archive/master.zip -O kc.zip &&\
