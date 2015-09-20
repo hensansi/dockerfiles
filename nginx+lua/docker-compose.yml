@@ -1,0 +1,4 @@
+server:
+  build: .
+  ports:
+   - 8040:80
