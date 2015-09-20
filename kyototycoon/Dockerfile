@@ -17,7 +17,6 @@ RUN wget https://github.com/cloudflare/kyototycoon/archive/master.zip -O kt.zip 
 
 ## Cleanup
 RUN \
-  apt-get purge -y wget unzip make build-essential ca-certificates &&\
   apt-get autoclean -y &&\
   apt-get autoremove -y &&\
   rm -rf /tmp/*  &&\
