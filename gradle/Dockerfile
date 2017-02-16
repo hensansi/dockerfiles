@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:8-jdk-alpine
 
 ENV GRADLE_VERSION=3.3 \
     GRADLE_HOME=/opt/gradle
