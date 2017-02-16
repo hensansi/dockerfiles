@@ -1,0 +1,10 @@
+# highest level .editorconfig file
+root = true
+
+# Nginx files
+[**.conf]
+indent_size = 4
+
+# MD files
+[*.md]
+trim_trailing_whitespace = false
