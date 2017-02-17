@@ -4,9 +4,10 @@ ENV GRADLE_VERSION=3.3 \
     GRADLE_HOME=/opt/gradle \
     APP_DIR=/app
 
-# Extra files created by gradle and java.
+# Extra files created by gradle
 ENV HOME=${APP_DIR}/.home \
-    GRADLE_USER_HOME=${APP_DIR}/.home
+    GRADLE_USER_HOME=${APP_DIR}/.home \
+    GRADLE_OPTS="\"-Dorg.gradle.daemon=false\""
 
 ENV PATH=$PATH:$GRADLE_HOME/bin
 
