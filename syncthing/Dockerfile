@@ -1,6 +1,6 @@
 From alpine:3.5
 
-ENV SYNCTHING_VERSION=0.14.23
+ENV SYNCTHING_VERSION=0.14.36
 
 RUN apk update && apk add --no-cache curl \
     && tarball="syncthing-linux-amd64-v${SYNCTHING_VERSION}.tar.gz" \
